@@ -1,0 +1,11 @@
+<div class="our-partners" id="partners">
+    <div>
+        <h1 class="title">Our Partners</h1>
+        <div class="partners">
+            <a [href]="partner.website" *ngFor="let partner of partners" class="partner">
+                <img [src]="partner.logo" alt="partner.name">
+                <p>{{partner.name}}</p>
+            </a>
+        </div>
+    </div>
+</div>

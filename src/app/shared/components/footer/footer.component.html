@@ -1,0 +1,153 @@
+<footer class="w-full">
+  <div class="bg-gray-950 md:flex p-8">
+    <div class="md:w-2/5">
+      <img
+        src="assets/img/cropped-gg.png"
+        class="mr-3 h-10 md:h-14 w-auto hidden sm:block"
+        alt="Go-Groups Logo"
+      />
+      <div class="sm:mt-8 text-white flex md:flex-col">
+        <span class="w-1/2 md:mb-2">
+          <span class="block pb-2 text-gray-600 text-opacity-70 capitalize">{{
+            "email" | translate
+          }}</span>
+          <span class="font-bold">info@go-groups.net</span>
+        </span>
+        <span class="w-1/2">
+          <span class="block pb-2 text-gray-600 text-opacity-70 capitalize">{{
+            "phone_number" | translate
+          }}</span>
+          <span class="font-bold">+(237) 652 719 321</span>
+        </span>
+      </div>
+    </div>
+    <div class="flex mt-8 md:mt-0 md:w-2/5">
+      <span class="w-1/2 text-white">
+        <h5
+          class="uppercase border-b-4 border-tangerine w-12 font-bold text-gray-600 text-opacity-70"
+        >
+          {{ "company" | translate }}
+        </h5>
+        <div class="mt-4 capitalize">
+          <a [routerLink]="['/', 'career']" class="block pb-2">{{ "careers" | translate }}</a>
+          <a href="#about-us" class="block pb-2">{{ "about_us" | translate }}</a>
+          <a href="mailto:info@go-groups.net">{{ "contact_us" | translate }}</a>
+        </div>
+      </span>
+      <div class="w-1/2 text-white">
+        <h5
+          class="uppercase border-b-4 border-tangerine w-12 font-bold text-gray-600 text-opacity-70"
+        >
+          {{ "products" | translate }}
+        </h5>
+        <div class="mt-4">
+          <a href="https://go-student.net" target="_blank" class="block pb-2">{{
+            "gostudent" | translate
+          }}</a>
+          <a href="https://mygowaka.com" target="_blank" class="block pb-2">{{
+            "gowaka" | translate
+          }}</a>
+          <a
+            href="https://mygosupport.com"
+            target="_blank"
+            class="block pb-2"
+            >{{ "gosupportme" | translate }}</a
+          >
+          <a href="https://mygojobs.com" target="_blank" class="block pb-2">{{
+            "gojobs" | translate
+          }}</a>
+          <a href="https://mygosuccess.com" target="_blank">{{
+            "gosuccess" | translate
+          }}</a>
+        </div>
+      </div>
+    </div>
+    <div class="flex mt-8 md:mt-0 md:w-1/5">
+      <span class="w-1/2 text-white">
+        <h5
+          class="uppercase border-b-4 border-tangerine w-12 font-bold text-gray-600 text-opacity-70"
+        >
+          {{ "news" | translate }}
+        </h5>
+        <div class="mt-4 capitalize">
+          <a href="#events&updates" class="block pb-2">{{
+            "events_&_updates" | translate
+          }}</a>
+        </div>
+      </span>
+      <div class="text-white flex justify-between w-2/5 sm:hidden">
+        <a href="#" target="_blank">
+          <img
+            class="h-4 md:h-6 w-auto"
+            src="assets/img/facebook-color-svgrepo-com.svg"
+            alt="phone"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/company/go-groups-ltd/"
+          target="_blank"
+        >
+          <img
+            class="h-4 md:h-6 w-auto"
+            src="assets/img/linkedin-color-svgrepo-com.svg"
+            alt="phone"
+          />
+        </a>
+        <a href="#" target="_blank">
+          <img
+            class="h-4 md:h-6 w-auto"
+            src="assets/img/twitter-color-svgrepo-com.svg"
+            alt="phone"
+          />
+        </a>
+        <a href="#" target="_blank">
+          <img
+            class="h-4 md:h-6 w-auto"
+            src="assets/img/instagram-1-svgrepo-com.svg"
+            alt="phone"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="bg-tangerine h-px"></div>
+  <div
+    class="bg-gray-950 h-12 flex sm:justify-between justify-center items-center text-center px-8 text-xs md:text-sm"
+  >
+    <span class="text-white">
+      &copy; {{ year | date : "yyyy" }} &nbsp;
+      <a href="#" class="text-tangerine">Go-Groups Ltd,</a> &nbsp; All Rights
+      Reserved
+    </span>
+    <span class="text-white hidden sm:flex w-1/6 justify-between">
+      <a href="https://www.facebook.com/gogroups" target="_blank">
+        <img
+          class="h-4 md:h-6 w-auto"
+          src="assets/img/facebook-color-svgrepo-com.svg"
+          alt="Go-Groups LTD's linkedin profile"
+        />
+      </a>
+      <a href="https://www.linkedin.com/company/go-groups-ltd/" target="_blank">
+        <img
+          class="h-4 md:h-6 w-auto"
+          src="assets/img/linkedin-color-svgrepo-com.svg"
+          alt="Go-Groups LTD's linkedin profile"
+        />
+      </a>
+      <a href="#" target="_blank">
+        <img
+          class="h-4 md:h-6 w-auto"
+          src="assets/img/twitter-color-svgrepo-com.svg"
+          alt="phone"
+        />
+      </a>
+      <a href="#" target="_blank">
+        <img
+          class="h-4 md:h-6 w-auto"
+          src="assets/img/instagram-1-svgrepo-com.svg"
+          alt="phone"
+        />
+      </a>
+    </span>
+  </div>
+</footer>

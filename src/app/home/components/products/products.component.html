@@ -1,0 +1,34 @@
+<section id="products" class="products">
+  <div class="products-header">
+    <h1 class="h1">Our Products</h1>
+    <p class="p">
+      We build web and mobile applications for diverse works of life
+    </p>
+  </div>
+  <div class="products-list bg-white">
+    <a
+      *ngFor="let product of products"
+      class="product"
+      [href]="product.website"
+      target="_blank"
+    >
+      <div class="product-details">
+        <img class="product-logo" [src]="product.logo" [alt]="product.name" />
+        <div class="product-namedesc">
+          <h2 class="product-name">{{ product.name }}</h2>
+          <p class="product-description">{{ product.description }}</p>
+          <div class="product-categories">
+            <span
+              class="product-category"
+              *ngFor="let category of product.categories"
+              >{{ category }}</span
+            >
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <!-- <button (click)="book()" class="btn">Book a Product Demo</button> -->
+  <a href="mailto:info@go-groups.net" class="btn">{{'book_a_demo' | translate}}</a>
+</section>

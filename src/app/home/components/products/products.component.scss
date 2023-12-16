@@ -1,0 +1,55 @@
+.products {
+  @apply min-h-screen py-[1rem] flex flex-col justify-center items-center px-2;
+}
+
+.h1 {
+  @apply text-3xl lg:text-5xl font-bold;
+}
+
+.p {
+  @apply font-bold opacity-40 mt-1 text-center;
+}
+
+.products-header {
+  @apply flex flex-col items-center;
+}
+
+.products-list {
+  @apply grid grid-cols-1 lg:grid-cols-2 max-w-[70rem] gap-x-10 gap-y-8 px-8 pt-10 pb-8;
+}
+
+.product {
+  @apply shadow-lg duration-500 hover:shadow-xl hover:-translate-y-1 px-8 py-10 rounded;
+}
+
+.product-details {
+  @apply flex flex-col lg:flex-row items-center gap-8;
+}
+
+.product-logo {
+  @apply w-[80px] h-[80px] aspect-square bg-rice rounded-full;
+}
+
+.product-namedesc {
+  @apply max-w-[22rem] flex flex-col items-center text-center lg:items-start lg:text-left;
+}
+
+.product-name {
+  @apply font-bold text-xl lg:text-2xl mb-[5px];
+}
+
+.product-description {
+  @apply leading-[1.5rem] opacity-90;
+}
+
+.product-categories {
+  @apply flex gap-2 mt-5 flex-wrap justify-center lg:justify-start;
+}
+
+.product-category {
+  @apply text-slate-600 text-sm bg-slate-100 bg-opacity-40 px-4 py-1 rounded-full;
+}
+
+.btn {
+  @apply mt-6 text-rice bg-marigold font-bold py-4 px-8 rounded-lg shadow-lg;
+}

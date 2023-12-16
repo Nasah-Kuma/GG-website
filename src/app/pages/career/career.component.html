@@ -1,0 +1,63 @@
+<div *ngIf="hiring else notHiring" class="career">
+    <span class="cta">We're hiring</span>
+
+    <div class="cta-content">
+        <h1 class="cta-title">Be part of our mission</h1>
+        <p class="cta-desc">
+            We're looking for passionate people to join us in our mission.
+            We value clear communication, and full ownership and responsibility.
+        </p>
+    </div>
+
+    <div class="tags">
+        <button *ngFor="let tag of tags" class="tag">{{tag}}</button>
+    </div>
+
+    <ul>
+        <li *ngFor="let job of jobs">
+            <div class="job">
+                <div class="job-info">
+                    <h2 class="job-role">Product Designer</h2>
+                    <p class="job-desc">We're looking for a mid-level product designer to join our team</p>
+                    <div class="job-details">
+                        <span class="job-detail">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32">
+                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2">
+                                    <circle cx="16" cy="11" r="4" />
+                                    <path d="M24 15c-3 7-8 15-8 15s-5-8-8-15s2-13 8-13s11 6 8 13Z" />
+                                </g>
+                            </svg>
+                            <span>On-site, Buea</span>
+                        </span>
+
+                        <span class="job-detail">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 30 30">
+                                <path fill="currentColor"
+                                    d="M3.74 14.47c0-2.04.51-3.93 1.52-5.66s2.38-3.1 4.11-4.11s3.61-1.51 5.64-1.51c1.52 0 2.98.3 4.37.89s2.58 1.4 3.59 2.4s1.81 2.2 2.4 3.6s.89 2.85.89 4.39c0 1.52-.3 2.98-.89 4.37s-1.4 2.59-2.4 3.59s-2.2 1.8-3.59 2.39s-2.84.89-4.37.89c-1.53 0-3-.3-4.39-.89s-2.59-1.4-3.6-2.4s-1.8-2.2-2.4-3.58s-.88-2.84-.88-4.37zm2.48 0c0 2.37.86 4.43 2.59 6.18c1.73 1.73 3.79 2.59 6.2 2.59c1.58 0 3.05-.39 4.39-1.18s2.42-1.85 3.21-3.2s1.19-2.81 1.19-4.39s-.4-3.05-1.19-4.4s-1.86-2.42-3.21-3.21s-2.81-1.18-4.39-1.18s-3.05.39-4.39 1.18S8.2 8.72 7.4 10.07s-1.18 2.82-1.18 4.4zm7.92 0V7.81c0-.23.08-.43.24-.59s.36-.24.59-.24s.43.08.59.24s.24.36.24.59v5.82h3.78c.23 0 .43.08.59.24s.24.36.24.59c0 .22-.08.42-.24.59c-.16.17-.36.25-.59.25h-4.44c-.03.01-.09.01-.18.01a.806.806 0 0 1-.82-.84z" />
+                            </svg>
+                            <span>Full time</span>
+                        </span>
+                    </div>
+                </div>
+                <a target="_blank" class="btn-apply" href="https://mygojobs.com">
+                    <span>Apply</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M10 5H8.2c-1.12 0-1.68 0-2.108.218a1.999 1.999 0 0 0-.874.874C5 6.52 5 7.08 5 8.2v7.6c0 1.12 0 1.68.218 2.108a2 2 0 0 0 .874.874c.427.218.987.218 2.105.218h7.606c1.118 0 1.677 0 2.104-.218c.377-.192.683-.498.875-.874c.218-.428.218-.987.218-2.105V14m1-5V4m0 0h-5m5 0l-7 7" />
+                    </svg>
+                </a>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<ng-template #notHiring>
+    <div class="flex h-screen items-center justify-center">
+        <div class="text-center border p-2 lg:p-8 py-12">
+            <h2 class="text-lg lg:text-3xl">{{'no_open_positions' | translate}}</h2>
+            <p class="opacity-60">{{'check_again_later' | translate}}</p>
+        </div>
+    </div>
+</ng-template>

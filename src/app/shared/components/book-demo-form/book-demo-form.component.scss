@@ -1,0 +1,12 @@
+.book-demo {
+  @apply fixed z-[500] top-0 w-full flex pt-5 gap-2 lg:gap-5 flex-col items-center min-h-screen bg-black bg-opacity-60;
+}
+
+.button {
+  @apply px-4 w-full py-3 lg:py-4 bg-marigold font-bold text-rice rounded;
+}
+
+.button-exit {
+  @apply z-10 bg-red-500 text-white shadow-2xl border-[1px] border-white rounded-full p-2 font-bold flex justify-center items-end;
+}
+

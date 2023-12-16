@@ -1,0 +1,19 @@
+.text-input {
+  @apply border-2 rounded opacity-70 w-full bg-slate-300 h-[3rem] relative;
+}
+
+.input {
+  @apply h-full w-full py-2 px-3 opacity-80 pt-5;
+}
+
+.input:focus {
+  @apply outline-blue-800;
+}
+
+.label {
+  @apply absolute z-20 text-slate-800 left-2 bg-white px-2 -translate-y-1/2 rounded-xl text-[.9rem];
+}
+
+.input-action {
+  @apply absolute top-1/2 -translate-y-1/2 right-3 border-2 border-slate-500 rounded-full
+}

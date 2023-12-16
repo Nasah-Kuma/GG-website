@@ -1,0 +1,15 @@
+.updates {
+    @apply grid md:grid-cols-2 lg:grid-cols-4 gap-[40px] w-fit mx-auto;
+}
+
+.updates > * {
+    @apply max-w-[350px];
+}
+
+.btn-more {
+    @apply my-5 mt-16 px-10 rounded font-bold py-2 bg-marigold;
+}
+
+.section-header {
+    @apply font-bold text-4xl py-4 text-center;
+}

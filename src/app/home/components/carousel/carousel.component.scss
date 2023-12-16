@@ -1,0 +1,31 @@
+.hero {
+  @apply min-h-[85vh] lg:min-h-[90vh] relative flex items-center justify-center bg-center bg-cover bg-no-repeat bg-[url('/assets/img/staff.jpeg')];
+}
+
+.hero-overlay {
+  @apply absolute bg-black w-full h-full bg-opacity-90;
+}
+
+.hero-content {
+  @apply w-[90vw] lg:w-[72vw] relative text-rice;
+}
+
+.hero-cta {
+  @apply flex flex-col gap-8 max-w-[50rem];
+}
+
+.cta-text {
+  @apply opacity-70 text-center font-semibold text-sm lg:text-left lg:text-lg lg:leading-[2rem];
+}
+
+.button {
+  @apply rounded-lg font-semibold text-sm flex items-center justify-center gap-1 px-3 py-2 lg:px-5 lg:py-4 lg:gap-2 lg:text-xl;
+}
+
+.h2 {
+  @apply font-bold text-3xl text-center lg:text-left lg:text-5xl lg:leading-[3.5rem];
+}
+
+.h1 {
+  @apply font-bold text-tangerine text-3xl text-center lg:text-left lg:text-7xl lg:leading-[3.5rem];
+}

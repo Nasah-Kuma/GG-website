@@ -1,0 +1,179 @@
+<header
+  class="fixed py-2 left-0 w-full z-10 max-h-fit page-header"
+  (scroll)="toggleNavBar()"
+>
+  <nav class="border-gray-200 px-4 lg:px-6 py-2.5">
+    <div
+      class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
+    >
+      <a href="/" class="items-center">
+        <img
+          src="assets/img/cropped-gg.png"
+          class="mr-3 h-10 md:h-14 w-auto"
+          alt="Go-Groups Logo"
+        />
+      </a>
+      <div class="inline-block items-center lg:order-2">
+        <button
+          type="button"
+          class="inline-flex justify-center items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-expanded="false"
+          (click)="showDropdown = !showDropdown"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-6 h-6"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+          <svg
+            class="hidden w-6 h-6"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <!-- for larger screens -->
+      <div
+        class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+        role="menu"
+        aria-orientation="vertical"
+        aria-labelledby="options-menu"
+      >
+        <ul
+          class="flex flex-col mt-4 font-large lg:flex-row lg:space-x-8 lg:mt-0 capitalize"
+        >
+          <li>
+            <a
+              href="#"
+              class="block py-2 px-2 text-white hover:text-tangerine focus:border-b"
+              aria-current="page"
+              >{{ "home" | translate }}</a
+            >
+          </li>
+          <li>
+            <a
+              href="#products"
+              class="block py-2 px-2 text-white hover:text-tangerine focus:border-b"
+              >{{ "our_products" | translate }}</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about-us"
+              class="block py-2 px-2 text-white hover:text-tangerine focus:border-b"
+              aria-current="page"
+              >{{ "about_us" | translate }}</a
+            >
+          </li>
+          <li>
+            <a
+              href="#partners"
+              class="block py-2 px-2 text-white hover:text-tangerine focus:border-b"
+              >{{ "our_partners" | translate }}</a
+            >
+          </li>
+          <li>
+            <a
+              href="#team"
+              class="block py-2 px-2 text-white hover:text-tangerine focus:border-b"
+              >{{ "our_team" | translate }}</a
+            >
+          </li>
+          <li>
+            <a
+              href="#events&updates"
+              class="block py-2 px-2 text-white hover:text-tangerine focus:border-b"
+              >{{ "events&updates" | translate }}</a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:info@go-groups.net"
+              class="block py-2 px-2 text-white hover:text-tangerine focus:border-b"
+              >{{ "contact_us" | translate }}</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- for smaller screens -->
+      <div
+        class="z-15 absolute right-2 top-full bg-white shadow-inner rounded"
+        role="menu"
+        *ngIf="showDropdown"
+        aria-orientation="vertical"
+        aria-labelledby="options-menu"
+      >
+        <ul
+          class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 capitalize"
+        >
+          <li>
+            <a
+              href="/"
+              class="block py-2 px-2 text-gray-700 focus:text-tangerine"
+              aria-current="page"
+              >{{ "home" | translate }}</a
+            >
+          </li>
+          <li>
+            <a
+              href="#products"
+              class="block py-2 px-2 text-gray-700 focus:text-tangerine"
+              >{{ "our_products" | translate }}</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about-us"
+              class="block py-2 px-2 text-gray-700 focus:text-tangerine"
+              aria-current="page"
+              >{{ "about_us" | translate }}</a
+            >
+          </li>
+          <li>
+            <a
+              href="#partners"
+              class="block py-2 px-2 text-gray-700 focus:text-tangerine"
+              >{{ "our_partners" | translate }}</a
+            >
+          </li>
+          <li>
+            <a
+              href="#team"
+              class="block py-2 px-2 text-gray-700 focus:text-tangerine"
+              >{{ "our_team" | translate }}</a
+            >
+          </li>
+          <li>
+            <a
+              href="#events&updates"
+              class="block py-2 px-2 text-gray-700 focus:text-tangerine"
+              >{{ "events&updates" | translate }}</a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:info@go-groups.net"
+              class="block py-2 px-2 text-gray-700 focus:text-tangerine"
+              >{{ "contact_us" | translate }}</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

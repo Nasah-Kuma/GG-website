@@ -1,0 +1,24 @@
+<section
+  class="min-h-screen flex flex-col justify-center items-center px-2"
+  id="team"
+>
+  <h5 class="text-3xl lg:text-5xl font-bold">
+    {{ "meet_our_team" | translate }}
+  </h5>
+  <span class="font-bold opacity-40 mt-2 mb-4 text-center">{{
+    "meet_our_team_description" | translate
+  }}</span>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+    <div *ngFor="let member of ourTeamList" class="relative">
+      <img
+        class="w-[320px] h-[273px]"
+        [src]="member.imageUrl"
+        [alt]="member.name + ' image'"
+      />
+      <div class="border-black border-2 rounded-full absolute left-16 bottom-5 bg-white px-8 py-2">
+        <span class="font-bold block text-sm">{{ member.name }}</span>
+        <span class="font-bold opacity-40 text-xs">{{ member.position }}</span>
+      </div>
+    </div>
+  </div>
+</section>

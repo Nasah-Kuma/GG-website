@@ -1,0 +1,55 @@
+.career {
+    @apply max-w-[95vw] lg:max-w-[80vw] px-4 py-10 mx-auto;   
+}
+
+.cta {
+    @apply px-4 py-1 border-4 border-slate-800 text-sm font-bold rounded-full;
+}
+
+.cta-content {
+    @apply py-3 flex flex-col gap-2;
+}
+
+.cta-title {
+    @apply text-4xl mt-3 font-bold;
+}
+
+.cta-desc {
+    @apply leading-[22px] text-lg opacity-70 max-w-[800px];
+}
+
+.tags {
+    @apply pb-10 pt-10 flex flex-wrap gap-y-2 gap-x-2 lg:gap-x-4;
+}
+
+.tag {
+    @apply px-4 border text-slate-700 border-slate-900 text-lg rounded-full;
+}
+
+.job {
+    @apply flex flex-col gap-6 lg:gap-0 lg:flex-row items-start border-t border-slate-400 py-10 hover:bg-slate-100;
+}
+
+.job-info {
+    @apply mr-auto text-slate-800;
+}
+
+.job-detail {
+    @apply flex items-center py-[3px] pl-2 pr-3 border-slate-800 border rounded-full gap-[4px];
+}
+
+.job-details {
+    @apply flex gap-4 mt-5;
+}
+
+.job-role {
+    @apply text-2xl font-bold;
+}
+
+.job-desc {
+    @apply opacity-80 text-lg;
+}
+
+.btn-apply {
+    @apply flex gap-2 items-center text-xl font-bold border p-2 rounded;
+}

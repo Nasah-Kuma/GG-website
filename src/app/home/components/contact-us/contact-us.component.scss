@@ -1,0 +1,47 @@
+.contact {
+    @apply bg-green-50 bg-opacity-40 min-h-screen flex items-center justify-center bg-center py-32;
+}
+
+.content {
+    @apply min-h-[80vh] w-[95vw] lg:w-[75vw] max-w-[100vw] bg-white shadow-2xl rounded flex flex-col-reverse lg:flex-row relative; 
+}
+
+.left {
+    @apply min-h-[400px] lg:w-[40%] bg-slate-200 relative;
+}
+
+.right {
+    @apply flex-1 py-24 lg:py-6 px-10 flex flex-col items-center justify-center;
+}
+
+.title {
+    @apply font-bold text-4xl text-center;
+}
+
+.other-contacts {
+    @apply bg-white absolute bottom-0 w-full p-4 text-marigold ;
+}
+
+.social-media {
+    @apply absolute top-[50%] right-0 flex flex-row lg:flex-col gap-4 px-4 z-[20];
+}
+
+.social-media-icon {
+    @apply w-[50px] h-[50px];
+}
+
+.a-contact {
+    @apply flex gap-2;
+}
+
+.emails {
+    @apply flex gap-4;
+}
+
+.phones {
+    @apply flex gap-4;
+}
+
+.other-contacts > * {
+    @apply py-2 text-xl font-bold px-2;
+}

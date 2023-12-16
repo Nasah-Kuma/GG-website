@@ -1,0 +1,16 @@
+<a class="item" [routerLink]="['blog', item?.id]">
+    <img class="item-img" [src]="item?.cover" alt="blog title">
+    <p class="item-tag">{{item?.category}}</p>
+    <h3 class="item-title">{{item?.title}}</h3>
+    <p class="item-meta">
+        <span class="item-published">{{item?.date}}</span>
+    </p>
+
+    <p class="item-header">
+        {{item?.summary || item?.title}}
+    </p>
+
+    <a class="item-more" href="#">
+        {{'read_more' | translate}}
+    </a>
+</a>

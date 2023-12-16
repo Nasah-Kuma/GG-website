@@ -1,0 +1,19 @@
+<div class="book-demo">
+    <form (ngSubmit)="book()" [formGroup]="newBookingForm" class="book-demo-form">
+      <h1 *ngIf="title" class="h1">{{'BOOK_DEMO_FORM_TITLE' | translate}}</h1>
+  
+      <app-text-input value="" formControlName="fullName" [label]="'FULL_NAME' | translate"></app-text-input>
+      <app-text-input formControlName="email" [label]="'EMAIL_ADDRESS' | translate"></app-text-input>
+      <div class="flex gap-4">
+        <app-text-input formControlName="country" [label]="'COUNTRY' | translate"></app-text-input>
+        <app-text-input formControlName="phone" [label]="'PHONE_NUMBER' | translate"></app-text-input>
+      </div>
+      <app-text-input formControlName="company" [label]="'COMPANY_OR_INSTITUTION' | translate"></app-text-input>
+      <app-text-input formControlName="sector" [label]="'SECTOR' | translate"></app-text-input>
+      <app-text-input formControlName="comment" [label]="'COMMENT' | translate"></app-text-input>
+  
+      <button type="submit" class="button">{{"SUBMIT" | translate}}</button>
+    </form>
+  </div>
+  
+  

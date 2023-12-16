@@ -1,0 +1,65 @@
+.about-us {
+  @apply pt-12 ;
+}
+
+.about-title {
+  @apply text-3xl font-bold mb-4;
+}
+
+.about-texts {
+  @apply max-w-[40rem] flex flex-col gap-4;
+}
+
+.about-texts p {
+  @apply text-center leading-[2rem] opacity-70;
+}
+
+.section {
+  @apply flex gap-6 rounded overflow-hidden flex-col w-fit mx-auto md:flex-row md:items-center lg:gap-16;
+}
+.section-reverse {
+  @apply md:flex-row-reverse;
+}
+.section--content {
+  @apply p-5 max-w-[35rem] text-lg flex gap-6 flex-col text-center lg:p-10;
+}
+
+.section--heading {
+  @apply font-bold text-3xl text-marigold border-b-marigold border-b-4 w-fit mx-auto px-2 pb-1;
+}
+
+.section--text {
+  @apply opacity-60;
+}
+
+.section--img {
+  @apply h-[14rem] w-full md:h-[12rem] lg:h-[15rem] lg:w-[24rem] md:w-[18rem];
+}
+
+.visions-missions {
+  @apply flex flex-col py-20 bg-opacity-50 gap-32 bg-green-50;
+}
+
+.story {
+  @apply flex relative flex-col gap-4 justify-center items-center shadow-lg w-full mx-auto text-center mb-12 p-4 rounded-lg lg:max-w-[60%] lg:shadow-lg lg:p-10 lg:mb-24;
+}
+
+.story--heading {
+  @apply font-bold text-3xl mb-4 border-b-marigold border-b-4 w-fit mx-auto px-2 pb-1;
+}
+
+.story--content {
+  @apply opacity-60 leading-7 text-lg p-2 lg:px-8 pb-4;
+}
+
+.about-us-section-2 {
+  @apply flex items-center justify-center px-4 py-20;
+}
+
+.story--img {
+  @apply -top-20 md:-top-28 absolute shadow-lg p-2 rounded-full lg:block h-[5rem] w-[4rem] lg:w-[7rem] lg:h-[8rem];
+}
+
+#story {
+  @apply text-center font-bold text-5xl py-12;
+}

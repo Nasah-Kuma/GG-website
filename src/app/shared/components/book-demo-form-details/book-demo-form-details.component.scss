@@ -1,0 +1,16 @@
+.book-demo-form {
+    @apply grid max-h-[90vh] overflow-auto w-full max-w-[95vw] md:max-w-[35rem] flex-col items-center gap-6 md:gap-8 px-6 lg:px-8 py-10 bg-white rounded;
+}
+  
+  .button {
+    @apply px-4 w-full py-3 lg:py-4 bg-marigold font-bold text-rice rounded;
+  }
+
+  .h1 {
+    @apply text-center font-bold mx-auto text-lg lg:text-2xl mb-[.5rem] max-w-[20rem] leading-tight lg:leading-[1.6rem] opacity-60;
+  }
+  
+  .exit-img {
+    @apply bg-red-600 rounded-full p-1 shadow-lg text-red-200 font-bold w-[2rem] h-[2rem] md:w-[2.5rem] md:h-[2.5rem];
+  }
+  

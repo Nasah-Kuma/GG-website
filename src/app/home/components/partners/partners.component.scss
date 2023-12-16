@@ -1,0 +1,42 @@
+.our-partners {
+    @apply py-[2rem] lg:py-[4rem] flex items-center justify-center overflow-hidden;
+}
+.partners {
+    // animation-name: slide;
+    // animation-duration: 15s;
+    // animation-iteration-count: infinite;
+    // animation-timing-function: linear;
+    // animation-fill-mode: backwards;
+    // animation-play-state: running;
+
+    &:hover {
+        animation-play-state: paused;
+    }
+
+    @apply flex gap-6 overflow-hidden relative ;
+}
+
+.partner {
+    @apply w-[250px] flex flex-col items-center gap-2 p-4 shadow-lg rounded;
+}
+
+.partner > p {
+    @apply opacity-50;
+}
+.partner > img {
+    @apply h-[120px] w-full;
+}
+
+.title {
+    @apply text-5xl font-bold text-center py-5;
+}
+
+@keyframes slide {
+    0% {
+        left: 20%;
+    }
+
+    100% {
+        left: -20%;
+    }
+}

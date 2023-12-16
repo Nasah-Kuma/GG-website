@@ -1,0 +1,27 @@
+.item {
+    @apply block rounded-sm overflow-hidden flex flex-col gap-1;
+}
+
+.item-img {
+    @apply h-[200px] w-[350px]
+}
+
+.item-tag {
+    @apply uppercase block text-sm opacity-80;
+}
+
+.item-title {
+    @apply font-bold text-xl leading-[22px] ;
+}
+
+.item-meta {
+    @apply flex justify-between opacity-60 text-sm;
+}
+
+.item-header {
+    @apply opacity-80 mt-2;
+}
+
+.item-more {
+    @apply font-bold text-marigold;
+}
